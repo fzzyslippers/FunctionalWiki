@@ -3,8 +3,10 @@
 // @namespace   sandwich
 // @description Cleans up some of Wikipedia and removes some less useful features
 // @include     https://en.wikipedia.org/wiki/*
-// @version     0.1
+// @version     0.1.01
 // @require		https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js
+// @updateURL	https://github.com/nickippoliti/FunctionalWiki/raw/master/FunctionalWiki.user.js
+// @downloadURL	https://github.com/nickippoliti/FunctionalWiki/raw/master/FunctionalWiki.user.js
 // ==/UserScript==
 
 //Hide basic stuff
