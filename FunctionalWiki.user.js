@@ -3,7 +3,7 @@
 // @namespace   sandwich
 // @description Cleans up some of Wikipedia and removes some less useful features
 // @include     https://en.wikipedia.org/wiki/*
-// @version     0.1.01
+// @version     0.1.02
 // @require		https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js
 // @updateURL	https://github.com/nickippoliti/FunctionalWiki/raw/master/FunctionalWiki.user.js
 // @downloadURL	https://github.com/nickippoliti/FunctionalWiki/raw/master/FunctionalWiki.user.js
@@ -60,4 +60,11 @@ $("div#cl2tgth").css({"font-size":10});
 $("div.thumb").click(function () {
 	$("div.thumbinner div.thumbcaption", this).toggle(500);
 	$("div.thumbinner a img", this).toggle(500);
+	$("div a.image", this).toggle(500);
 	});
+	
+// Hide Gallery images
+$("ul.gallery li.gallerybox div.thumb").find("a.image").hide();
+
+// Move Gallery Captions
+//$("li.gallerybox div div.thumb").append($("li.gallerybox").find("div.gallerytext").html());
